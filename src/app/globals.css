@@ -1,0 +1,38 @@
+:root {
+  --foreground-rgb: white;
+  --background-start-rgb: white;
+  --background-end-rgb: white;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb));
+  overflow-y: auto;
+}
+
+.mobile-swiper {
+  height: 100vh;
+
+  .slide-with-image,
+  .slide-with-gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 10px 15px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(94, 41, 41, 0.5);
+  }
+
+  .slide-with-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .slide-with-gradient {
+  }
+}

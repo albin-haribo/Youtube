@@ -1,0 +1,56 @@
+.container-yt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  .yt-rows {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  #thumbnail,
+  #link {
+    display: none;
+  }
+
+  .videoLinks img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* increased space between thumbnail and title */
+  }
+
+  .videoLinks {
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 5px;
+  }
+  .videoLinks:hover {
+    background-color: rgb(203, 203, 242); /* or any color you prefer */
+    /* Optional: to make the corners rounded */
+    transition: background-color 0.3s; /* smooth transition for hover effect */
+  }
+
+  button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d400ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #f40dc2;
+  }
+  .inputYt {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+}
